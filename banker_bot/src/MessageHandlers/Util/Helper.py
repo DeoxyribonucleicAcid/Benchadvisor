@@ -11,6 +11,7 @@ def build_msg_restart(bot, update):
 
 
 def test(bot, update):
+    bot.send_message(chat_id=update.message.chat_id, text='bot responds')
     return None
 
 

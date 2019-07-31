@@ -3,6 +3,9 @@ from MessageHandlers import NewBenchHandler
 
 class CALLBACK_HANDLER:
     callbacks = {
+        'bench': {
+            'rating': NewBenchHandler.handle_rating,
+        },
         'menu': {
             'new': NewBenchHandler.handle_new_bench,
         }

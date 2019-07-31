@@ -26,6 +26,11 @@ def command_handler_start(bot, update):
 
 
 @Actions.send_typing_action
+def command_handler_new_bench(bot, update):
+    NewBenchHandler.handle_new_bench(bot=bot, update=update)
+
+
+@Actions.send_typing_action
 def command_handler_help(bot, update):
     HelpMessageBuilder.build_msg_help(bot=bot, update=update)
 
@@ -62,8 +67,8 @@ def main():
 
     updater = Updater(token=State.token, request_kwargs={'read_timeout': 6, 'connect_timeout': 7})
     dispatcher = updater.dispatcher
-    start_handler = CommandHandler('start', callback=command_handler_restart)
-    newBench_handler = CommandHandler('new', callback=command_handler_restart)
+    start_handler = CommandHandler('start', callback=command_handler_start)
+    newBench_handler = CommandHandler('new', callback=command_handler_new_bench)
     # DEBUG
     restart_handler = CommandHandler('restart', callback=command_handler_restart)
     test_handler = CommandHandler('test', callback=command_handler_test, pass_args=True)
