@@ -2,3 +2,4 @@ conf.json
 .log
 .pycharm_log
 ../res/*
+.idea
