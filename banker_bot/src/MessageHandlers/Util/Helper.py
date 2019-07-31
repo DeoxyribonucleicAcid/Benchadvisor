@@ -1,7 +1,7 @@
 import os
 import sys
 
-from src.State import State
+from banker_bot.src.State import State
 
 
 def build_msg_restart(bot, update):

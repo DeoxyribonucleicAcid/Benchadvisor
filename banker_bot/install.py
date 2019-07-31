@@ -16,8 +16,8 @@ if __name__ == '__main__':
     install('setproctitle')
     install('requests')
     #install('Pillow')
-    #install('pymongo')
-    #install('dnspython')
+    install('pymongo')
+    install('dnspython')
     #install('emoji')
 
 if os.path.isfile(os.path.dirname(os.path.abspath(__file__)) + '/src/conf.json'):

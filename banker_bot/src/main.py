@@ -2,7 +2,7 @@ import logging
 
 import setup
 from telegram.ext import Updater, MessageHandler, Filters, CommandHandler, CallbackQueryHandler
-from src.State import State
+from banker_bot.src.State import State
 
 from MessageHandlers.Util import Actions, Helper
 from MessageHandlers import ReplyCallbackHandler, NewBenchHandler, MenuMessageBuilder, HelpMessageBuilder, StartHandler

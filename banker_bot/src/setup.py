@@ -6,7 +6,7 @@ import pymongo
 
 import setproctitle
 
-from src.State import State
+from banker_bot.src.State import State
 
 logger = logging.getLogger(__name__)
 

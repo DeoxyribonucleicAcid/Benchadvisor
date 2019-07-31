@@ -1,5 +1,5 @@
 from Entities import Bench
-import src.State as State
+import banker_bot.src.State as State
 
 
 def insert_new_bench(bench: Bench.Bench):
